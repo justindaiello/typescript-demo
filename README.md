@@ -69,4 +69,5 @@ const myFunc = (num: number): number => {
 
 ### Useful Links
 [React TypeScript cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup/)
+
 [TypeScript Docs](https://www.typescriptlang.org/docs/)
