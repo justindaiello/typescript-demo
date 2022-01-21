@@ -108,13 +108,13 @@ function parseVariant(
   variant: ButtonEnums,
 ): FlattenInterpolation<ThemeProps<string>> {
   switch (variant) {
-    case ButtonEnums.SECONDARY: {
+    case 'secondary': {
       return buttonSecondary;
     }
-    case ButtonEnums.WARNING: {
+    case 'warning': {
       return buttonWarning;
     }
-    case ButtonEnums.DANGER: {
+    case 'danger': {
       return buttonDanger;
     }
     default: {

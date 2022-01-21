@@ -1,4 +1,1 @@
-import Button, { ButtonEnums, ButtonProps } from './TSButton';
-
-export default Button;
-export { ButtonEnums };
+export { default } from './TSButton';

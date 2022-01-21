@@ -5,7 +5,7 @@ import theme from '../../styles/theme';
 import GlobalStyle from '../../styles/GlobalStyle.styled';
 import RadioButtonGroup from '../../components/RadioButtonGroup';
 
-import JSButton from '../../components/JSButton/JSButton';
+// import JSButton from '../../components/JSButton/JSButton';
 
 function App() {
   const radioOptions = [
