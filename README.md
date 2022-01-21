@@ -1,5 +1,6 @@
 # TypeScript Demo
 
+TypeScript is a superset of JavaScript that has optional static typing and compiles to plain JavaScript.
 
 ## Types
 
@@ -24,5 +25,26 @@ A colon after a variable name starts a _type annotation_: the type expression af
 let myNumber: number =  12
 ```
 
+### Type Aliases
+By using `type` we can create an alias for an existing type.
+```javascript
+type Age =  number
 
+let myNumber: Age = 12
+```
+```javascript
+type User = {
+  name: string
+  email: string
+}
 
+let myUser: User = { name: 'Bob Loblaw', email: 'bob@loblaw.com' }
+```
+
+### Function Types
+We can check the type of the argument and the return type.
+```javascript
+const myFunc = (num: number): number => {
+  return num + 1
+}
+```
