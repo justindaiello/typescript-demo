@@ -66,3 +66,7 @@ const myFunc = (num: number): number => {
   return num + 1;
 };
 ```
+
+### Useful Links
+[React TypeScript cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup/)
+[TypeScript Docs](https://www.typescriptlang.org/docs/)
