@@ -65,3 +65,14 @@ const myFunc = (num: number): number => {
   return num + 1;
 };
 ```
+
+### Useful Links
+[React TypeScript cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup/)
+
+[TypeScript Docs](https://www.typescriptlang.org/docs/)
+
+[Emacs Support](https://github.com/emacs-typescript/typescript.el)
+
+[VSCode Support](https://code.visualstudio.com/docs/languages/typescript)
+
+[TextMate Support](https://github.com/stanger/TypeScript-TextMate)
