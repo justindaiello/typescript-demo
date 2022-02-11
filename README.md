@@ -2,6 +2,10 @@
 
 TypeScript is a superset of JavaScript that has optional static typing and compiles to plain JavaScript.
 
+- Static typing can help prevent certain bugs/issues at the software development stage.
+- TypeScript documents itself. Declaring types can make it very easy to understand more about what your code is doing. This also makes refactoring easier.
+- TypeScript can help our codebase become more consistent and scalable.
+
 ## Types
 
 TypeScript brings an additional layer to JavaScript: _static types_. These only exist when compiling or type-checking source code. Each storage location (variable, property, etc.) has a static type that predicts its dynamic values. Type checking ensures that these predictions come true.
@@ -62,11 +66,26 @@ We can check the type of the argument and the return type.
 
 ```typescript
 const myFunc = (num: number): number => {
-  return num + 1;
+  return 1000 + num;
 };
 ```
 
+This can help prevent some serious errors
+
+_JavaScript_
+
+```javascript
+const myFunc = (num) => {
+  return 1000 + num;
+};
+
+myFunc('0'); // returns 10000 - oh no
+```
+
+Attempting to pass a string into this function in TypeScript will throw an error of `Argument of type 'string' is not assignable to parameter of type 'number'`
+
 ### Useful Links
+
 [React TypeScript cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup/)
 
 [TypeScript Docs](https://www.typescriptlang.org/docs/)

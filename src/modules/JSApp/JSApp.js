@@ -9,9 +9,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <JSButton>
-        Monthly
-      </JSButton>
+      <JSButton>Monthly</JSButton>
     </ThemeProvider>
   );
 }

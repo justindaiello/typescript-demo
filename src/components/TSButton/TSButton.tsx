@@ -3,15 +3,12 @@ import React from 'react';
 import { StyledButton } from './TSButton.styled';
 
 // Enums have some documented issues and are generally not recommended
-export enum ButtonEnumsAlt {
+export enum ButtonEnums {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
   WARNING = 'warning',
   DANGER = 'danger',
 }
-
-// Unions are the preferred way to write enums
-export type ButtonEnums = 'primary' | 'secondary' | 'warning' | 'danger';
 
 export type ButtonProps = {
   small?: boolean;
@@ -24,7 +21,7 @@ const TSButton = ({
   small,
   onClick,
   children,
-  variant = 'primary',
+  variant = ButtonEnums.PRIMARY,
 }: ButtonProps) => {
   return (
     <StyledButton small={small} variant={variant} onClick={onClick}>

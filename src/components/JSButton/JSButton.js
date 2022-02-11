@@ -8,7 +8,7 @@ export const ButtonEnums = {
   SECONDARY: 'secondary',
   WARNING: 'warning',
   DANGER: 'danger',
-}
+};
 
 const JSButton = ({
   small,
@@ -27,7 +27,7 @@ JSButton.propTypes = {
   small: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   children: PropTypes.node,
-  variant: PropTypes.oneOf(Object.keys(ButtonEnums))
-}
+  variant: PropTypes.oneOf(Object.keys(ButtonEnums)),
+};
 
 export default JSButton;

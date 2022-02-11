@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Button from '../TSButton';
+import Button, { ButtonEnums } from '../TSButton';
 import { StyledRadioButtonGroup } from './RadioButtonGroup.styled';
 
 export type RadioGroupProps = {
@@ -14,8 +14,8 @@ export type Options = {
   value: string;
 };
 
-const RadioButtonGroup = ({ options, preselectedOption }: RadioGroupProps) => {
-  const [selected, setSelected] = React.useState(preselectedOption);
+const RadioButtonGroup = ({ options, preselectedOption, handleChange }: RadioGroupProps) => {
+  const [selected, setSelected] = React.useState<string>(preselectedOption);
 
   return (
     <StyledRadioButtonGroup>
@@ -23,8 +23,11 @@ const RadioButtonGroup = ({ options, preselectedOption }: RadioGroupProps) => {
         <Button
           small
           key={option.value}
-          variant={option.value === selected ? 'primary' : 'secondary'}
-          onClick={() => setSelected(option.value)}
+          variant={option.value === selected ? ButtonEnums.PRIMARY : ButtonEnums.SECONDARY}
+          onClick={() => {
+            handleChange()
+            setSelected(option.value)
+          }}
         >
           {option.label}
         </Button>
